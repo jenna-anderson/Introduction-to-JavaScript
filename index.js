@@ -297,10 +297,19 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(string1) {
+  let vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+  let count = 0;
+  let charArray = string1.split('');
+    for(let i = 0; i < string1.length; i++){
+      
+      if(vowels.includes(charArray[i])){
+        count++;
+      }
+    }
+  return count;
 }
-
+console.log(vowelCounter("jennaAnderson"));
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
